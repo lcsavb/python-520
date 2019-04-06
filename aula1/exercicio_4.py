@@ -141,32 +141,14 @@ lista_de_usuarios = [
   }
 ]
 
-TEMPLATE = '{:>20} | {:>5} | {:>50} | {:>30} | {:>25}'
-
-CABECALHO = TEMPLATE.format('Nome', 'Idade', 'Endereço', 'Sexo', 'E-mail')
-
-print(CABECALHO)
-for usuario in lista_de_usuarios:
-  usuario_formatado = TEMPLATE.format(
-    usuario['nome'],
-    usuario['idade'],
-    usuario['endereco'],
-    usuario['sexo'],
-    usuario['email'],
-    )
-  print(usuario_formatado)
-
-  exit()
+emails_desejados=[]
 
 for usuario in lista_de_usuarios:
-  string_nome = 'Nome do infeliz: ' + '{:<20}'.format(usuario["nome"])
-  string_idade = 'Idade: ' + '{:<5}'.format(usuario["idade"])
-  string_end = 'End: ' + '{:<25}'.format(usuario["endereco"])
-  string_sex = 'Sex: ' + '{:<2}'.format(usuario["sexo"])
-  print(string_nome,string_sex,string_end,string_idade)
+  if 'l' in usuario['email'].lower() or 'j' in usuario['email'].lower():
+      if usuario['idade'] > 25:
+        emails_desejados.append(usuario['email'])
+    
 
-for usuario in lista_de_usuarios:
-    if usuario['sexo'] == '?':
-      print('Sinto informar que o seguinte estimado coleguinha é g0y:')
-      print (usuario['nome']) 
+print(emails_desejados)
+
 
