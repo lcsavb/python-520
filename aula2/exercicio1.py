@@ -19,20 +19,22 @@ import datetime
 import time
 import random
 
+
 def cadastrar_usuario():
-	usuario = {
-		'data_cadastro': datetime.datetime.now(),
-		'nome': input('Digite o nome: \n'),
-		'email': input('Digite o email: \n'),
-		'idade': input('Digite a idade: \n')
-	}
-	return usuario
+    usuario = {
+        'data_cadastro': datetime.datetime.now(),
+        'nome': input('Digite o nome: \n'),
+        'email': input('Digite o email: \n'),
+        'idade': input('Digite a idade: \n')
+    }
+    return usuario
+
 
 probabilidade = random.random()
 if probabilidade < 0.1:
-	cadastrar_usuario()
+    cadastrar_usuario()
 else:
-	print('Opa, não deu sorte!')
+    print('Opa, não deu sorte!')
 
 exit()
 
@@ -45,8 +47,4 @@ os.system('clear')
 
 d = novo_usuario['data_cadastro']
 
-print(d.strftime("%d de %B de %Y, %H:%M"))  
-
-
-
-
+print(d.strftime("%d de %B de %Y, %H:%M"))
