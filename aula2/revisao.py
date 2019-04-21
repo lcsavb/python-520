@@ -14,27 +14,6 @@ lista_de_gatos = [
 ]
 
 
-# def get_input_as_int(mensagem):
-# 	user_input = input(mensagem)
-# 	for token in user_input:
-# 		if token not in '0123456789':
-# 			return correct_input('Valor inválido, digite novamente: \n')
-# 	return int(user_input)
-
-# 	# solução nutela
-# 	# if user_input.isdigit():
-# 	# 	return int(user_input)
-
-# 	return int(user_input)
-
-# def correct_input(mensagem):
-# 		print(mensagem)
-# 		validinput = False
-# 		while not validinput:
-# 			user_input
-# 		valid_input = True
-
-
 def get_input_as_int(mensagem, erro):
     user_input = input(mensagem)
     try:

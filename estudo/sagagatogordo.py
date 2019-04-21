@@ -17,7 +17,7 @@ gatos_magros = []
 
 def cadastrar_gatos():
     gato = {
-        'nome': input('Digite o nome: \n'),
+        'nome': input('Digite o nome do gato: \n'),
 
         'idade': conserto_erros_do_cadastro(
             'Digite a idade do gato: \n', 'Idade cadastrada com sucesso!', 'Idade inválida, tente novamente!)'),
@@ -46,7 +46,7 @@ def checar_se_inteiro(mensagem_para_cadastro):
     return entrada_usuario
 
 
-for gato in range(1):
+for gato in range(3):
     lista_de_gatos.append(cadastrar_gatos())
 
 
