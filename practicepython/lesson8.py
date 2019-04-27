@@ -21,6 +21,7 @@ def jogadas_do_1():
         entrada_jogador_1 = input('Jogador 1: Pedra, tesoura ou papel? \n')
     return entrada_jogador_1
 
+#duas funções para as jogadas não são necessárias!
 
 def jogadas_do_2():
     entrada_jogador_2 = input('Jogador 2: Pedra, tesoura ou papel? \n')
@@ -33,7 +34,7 @@ def jogadas_do_2():
 print('Pedra/Tesoura/Papel \n')
 
 
-x = jogadas_do_1()
+x = jogadas_do_2()
 y = jogadas_do_2()
 
 
